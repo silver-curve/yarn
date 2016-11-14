@@ -42,8 +42,6 @@ addTest('https://github.com/npm-ml/ocaml.git#npm-4.02.3'); // hash
 addTest('https://git@github.com/babel/babylon.git'); // git url, with username
 addTest('https://github.com/babel/babel-loader.git#feature/sourcemaps'); // hash with slashes
 addTest('git+https://github.com/npm-ml/ocaml.git#npm-4.02.3'); // git+hash
-addTest('git@bitbucket.org/silvercurve/awsmqtt.git'); // git+ssh
-addTest('3456 git@bitbu###cket.org:silvercurve/awsmqtt.gitno'); // git+ssh with colon
 addTest('gitlab:leanlabsio/kanban'); // gitlab
 addTest('gist:d59975ac23e26ad4e25b'); // gist url
 addTest('bitbucket:hgarcia/node-bitbucket-api'); // bitbucket url

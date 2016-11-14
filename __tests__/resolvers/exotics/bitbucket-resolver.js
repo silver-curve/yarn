@@ -30,10 +30,10 @@ test('explodeHostedGitFragment should work for colon separator after host', () =
 });
 
 test('explodeHostedGitFragment should work for colon separator after host and with protocol before', () => {
-  const fragmentString = 'git+ssh://git@bitbucket.org:team2a/repo.git';
+  const fragmentString = 'git+ssh://git@bitbucket.org:team/repo.git';
 
   const expectedFragment: ExplodedFragment = {
-    user: 'team2a',
+    user: 'team',
     repo: 'repo',
     hash: '',
   };
@@ -42,10 +42,10 @@ test('explodeHostedGitFragment should work for colon separator after host and wi
 });
 
 test('explodeHostedGitFragment should work for slash separator after host', () => {
-  const fragmentString = 'git@bitbucket.org/team3/repo.git';
+  const fragmentString = 'git@bitbucket.org/team/repo.git';
 
   const expectedFragment: ExplodedFragment = {
-    user: 'team3',
+    user: 'team',
     repo: 'repo',
     hash: '',
   };
@@ -54,11 +54,11 @@ test('explodeHostedGitFragment should work for slash separator after host', () =
 });
 
 test('explodeHostedGitFragment should work for package name and colon separator after host', () => {
-  const fragmentString = 'awsmqtt@git@bitbucket.org:silvercurve/awsmqtt.git';
+  const fragmentString = 'package@git@bitbucket.org:team/repo.git';
 
   const expectedFragment: ExplodedFragment = {
-    user: 'silvercurve',
-    repo: 'awsmqtt',
+    user: 'team',
+    repo: 'repo',
     hash: '',
   };
 
